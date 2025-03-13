@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterLife Gym</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="BetterLife Gym">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#whyus" class="nav-link">why-choose-us</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#programs" class="nav-link">Programs</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            </li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="media/hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to BetterLife</h1>
+            <p>More Than Fitness—A Movement for a Better You</p>
+            <a href="#join" class="hero-btn">Join Us Today</a>
+        </div>
+    </section>
+
+    <section id="whyus" class="why-choose-us">
+        <h2>Why Choose <span>BetterLife?</span></h2>
+        <p class="section-description">We offer more than just workouts. Our services are designed to help you achieve your fitness goals effectively.</p>
+    
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="media/strength-training.jpg" alt="Strength Training">
+                    <div class="carousel-overlay">
+                        <h3>Strength Training</h3>
+                        <p>Build muscle and endurance with expert-guided sessions.</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-slide">
+                    <img src="media/cardio.jpg" alt="Cardio Workouts">
+                    <div class="carousel-overlay">
+                        <h3>Cardio Workouts</h3>
+                        <p>Boost stamina and heart health with intense cardio.</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-slide">
+                    <img src="media/groupworkout.jpg" alt="Group Workouts">
+                    <div class="carousel-overlay">
+                        <h3>Group Workouts</h3>
+                        <p>Stay motivated with fun and energetic group exercises.</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-slide">
+                    <img src="media/personaltrainer.jpg" alt="Personal Training">
+                    <div class="carousel-overlay">
+                        <h3>Personal Training</h3>
+                        <p>Get tailored one-on-one coaching for your fitness goals.</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-slide">
+                    <img src="media/nutrition.jpg" alt="Nutrition Plans">
+                    <div class="carousel-overlay">
+                        <h3>Nutrition Plans</h3>
+                        <p>Personalized diet plans to fuel your workouts.</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-slide">
+                    <img src="media/yoga.jpg" alt="Yoga & Wellness">
+                    <div class="carousel-overlay">
+                        <h3>Yoga & Wellness</h3>
+                        <p>Relax and rejuvenate with guided yoga sessions.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Navigation Arrows -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    
+            <!-- Dots Navigation -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="media/about-us.jpg" alt="About BetterLife">
+            </div>
+            <div class="about-content">
+                <h2>About <span>BetterLife</span></h2>
+                <p>
+                    At BetterLife, we go beyond just workouts! We are committed to helping you achieve your 
+                    fitness and wellness goals through **expert-guided training**, **personalized nutrition plans**, 
+                    and a **supportive community** that keeps you motivated.
+                </p>
+                <ul class="about-list">
+                    <li>✔ Certified Professional Trainers</li>
+                    <li>✔ Customized Diet & Workout Plans</li>
+                    <li>✔ State-of-the-art Facilities</li>
+                    <li>✔ Supportive Fitness Community</li>
+                </ul>
+                <a href="#contact" class="cta-button">Join Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="programs-section">
+        <h2>Our Fitness <span>Programs</span></h2>
+        <p class="section-description">Choose a program that fits your lifestyle and fitness goals.</p>
+    
+        <div class="programs-container">
+            <div class="program-card">
+                <img src="media/weight-training.jpg" alt="Weight Training">
+                <div class="program-info">
+                    <h3>Weight Training</h3>
+                    <p>Build strength with expert-guided sessions.</p>
+                    <a href="#" class="program-btn">Join Now</a>
+                </div>
+            </div>
+    
+            <div class="program-card">
+                <img src="media/hiit.jpg" alt="HIIT Workouts">
+                <div class="program-info">
+                    <h3>HIIT Workouts</h3>
+                    <p>Burn calories fast with high-intensity workouts.</p>
+                    <a href="#" class="program-btn">Join Now</a>
+                </div>
+            </div>
+    
+            <div class="program-card">
+                <img src="media/yoga1.jpg" alt="Yoga & Flexibility">
+                <div class="program-info">
+                    <h3>Yoga & Flexibility</h3>
+                    <p>Enhance flexibility & reduce stress.</p>
+                    <a href="#" class="program-btn">Join Now</a>
+                </div>
+            </div>
+    
+            <div class="program-card">
+                <img src="media/personal-coaching.jpg" alt="Personal Coaching">
+                <div class="program-info">
+                    <h3>Personal Coaching</h3>
+                    <p>One-on-one sessions tailored for you.</p>
+                    <a href="#" class="program-btn">Join Now</a>
+                </div>
+            </div>
+    
+            <div class="program-card">
+                <img src="media/group-fitness.jpg" alt="Group Fitness">
+                <div class="program-info">
+                    <h3>Group Fitness</h3>
+                    <p>Train with a community for motivation.</p>
+                    <a href="#" class="program-btn">Join Now</a>
+                </div>
+            </div>
+    
+            <div class="program-card">
+                <img src="media/nutritions.jpg" alt="Nutrition Plans">
+                <div class="program-info">
+                    <h3>Nutrition Plans</h3>
+                    <p>Fuel your body with personalized meal plans.</p>
+                    <a href="#" class="program-btn">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="blog" class="blog-section">
+        <h2>Latest from Our <span>Blog</span></h2>
+        <p class="section-description">Stay updated with fitness tips, workout routines, and wellness insights from our experts.</p>
+    
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="media/blog1.jpg" alt="Workout Tips">
+                <div class="blog-content">
+                    <h3>5 Essential Tips for a Better Workout</h3>
+                    <p>Learn how to maximize your training efficiency with expert-backed strategies...</p>
+                    <a href="#" class="read-more">Read More</a>
+                    <span class="blog-meta">By John Mzito • March 5, 2025</span>
+                </div>
+            </div>
+    
+            <div class="blog-card">
+                <img src="media/blog2.jpg" alt="Nutrition Guide">
+                <div class="blog-content">
+                    <h3>The Ultimate Guide to a Balanced Diet</h3>
+                    <p>Discover the key nutrients and meal plans to keep your body in peak condition...</p>
+                    <a href="#" class="read-more">Read More</a>
+                    <span class="blog-meta">By Alex Smith • March 2, 2025</span>
+                </div>
+            </div>
+    
+            <div class="blog-card">
+                <img src="media/blog3.jpg" alt="Yoga Benefits">
+                <div class="blog-content">
+                    <h3>How Yoga Can Improve Your Mental & Physical Health</h3>
+                    <p>Uncover the science-backed benefits of incorporating yoga into your routine...</p>
+                    <a href="#" class="read-more">Read More</a>
+                    <span class="blog-meta">By Jane Mambo • February 28, 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <p>Have questions? We would love to hear from you!</p>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+    
+            <!-- Contact Details -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-phone"></i> +254 700 123 456</p>
+                <p><i class="fas fa-envelope"></i> info@betterlife.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+    
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Branding -->
+            <div class="footer-branding">
+                <h2>BetterLife</h2>
+                <p>Empowering you to live a healthier, stronger life.</p>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 BetterLife. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
